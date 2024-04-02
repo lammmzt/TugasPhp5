@@ -17,25 +17,25 @@ class Mahasiswa{
     public function getPredikat(){
         if($this->nilai >= 85){
             return "Sangat Memuaskan";
-        }else if($this->nilai >= 70){
+        }else if($this->nilai >= 75){
             return "Memuaskan";
-        }else if($this->nilai >= 69){
-            return "Cukup";
         }else if($this->nilai >= 60){
+            return "Cukup";
+        }else if($this->nilai >= 40){
             return "Kurang";
         }else{
-            return "Tidak Lulus";
+            return "Sangat Kurang";
         }
     }
 
     public function getGrade(){
         if($this->nilai >= 85){
             return "A";
-        }else if($this->nilai >= 70){
+        }else if($this->nilai >= 75){
             return "B";
-        }else if($this->nilai >= 69){
-            return "C";
         }else if($this->nilai >= 60){
+            return "C";
+        }else if($this->nilai >= 40){
             return "D";
         }else{
             return "E";

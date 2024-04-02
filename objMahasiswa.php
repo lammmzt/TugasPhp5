@@ -88,7 +88,7 @@ require_once 'Mahasiswa.php';
                         </div>
                     </div>
                 </form>
-                <div class="row mt-4">
+                <div class="row mt-4 table-responsive">
 
                     <div class="col-12">
                         <h2 class="text-center fw-bold mb-4">
@@ -97,7 +97,7 @@ require_once 'Mahasiswa.php';
                         <hr>
                         <a href="objMahasiswa.php" class="btn btn-primary mb-3">
                             <- Kembali </a>
-                                <table class="table table-dark table-striped">
+                                <table class="table table-dark table-striped ">
                                     <thead class="text-center">
                                         <tr>
                                             <th>NIM</th>
