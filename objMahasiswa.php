@@ -88,28 +88,30 @@ require_once 'Mahasiswa.php';
                         </div>
                     </div>
                 </form>
-                <hr>
-                <div class="row mt-2">
+                <div class="row mt-4">
 
                     <div class="col-12">
                         <h2 class="text-center fw-bold mb-4">
                             Daftar Nilai Ujian Mahasiswa
                         </h2>
-                        <table class="table table-dark table-striped">
-                            <thead class="text-center">
-                                <tr>
-                                    <th>NIM</th>
-                                    <th>Nama</th>
-                                    <th>Kuliah</th>
-                                    <th>Mata Kuliah</th>
-                                    <th>Nilai</th>
-                                    <th>Grade</th>
-                                    <th>Pedikat</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
+                        <hr>
+                        <a href="objMahasiswa.php" class="btn btn-primary mb-3">
+                            <- Kembali </a>
+                                <table class="table table-dark table-striped">
+                                    <thead class="text-center">
+                                        <tr>
+                                            <th>NIM</th>
+                                            <th>Nama</th>
+                                            <th>Kuliah</th>
+                                            <th>Mata Kuliah</th>
+                                            <th>Nilai</th>
+                                            <th>Grade</th>
+                                            <th>Pedikat</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
 
-                            <?php 
+                                    <?php 
 
                             // get form data
                            if(isset($_POST['nim'])){
@@ -130,21 +132,21 @@ require_once 'Mahasiswa.php';
                            }
 
                              ?>
-                            <tbody class="text-center">
-                                <tr>
-                                    <?php if(isset($_POST['nim'])){ ?>
-                                    <td><?php echo $mhs1->nim; ?></td>
-                                    <td><?php echo $mhs1->nama; ?></td>
-                                    <td><?php echo $mhs1->kuliah; ?></td>
-                                    <td><?php echo $mhs1->mataKuliah; ?></td>
-                                    <td><?php echo $mhs1->nilai; ?></td>
-                                    <td><?php echo $grade; ?></td>
-                                    <td><?php echo $predikat; ?></td>
-                                    <td><?php echo $status; ?></td>
-                                    <?php } ?>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <?php if(isset($_POST['nim'])){ ?>
+                                            <td><?php echo $mhs1->nim; ?></td>
+                                            <td><?php echo $mhs1->nama; ?></td>
+                                            <td><?php echo $mhs1->kuliah; ?></td>
+                                            <td><?php echo $mhs1->mataKuliah; ?></td>
+                                            <td><?php echo $mhs1->nilai; ?></td>
+                                            <td><?php echo $grade; ?></td>
+                                            <td><?php echo $predikat; ?></td>
+                                            <td><?php echo $status; ?></td>
+                                            <?php } ?>
+                                        </tr>
+                                    </tbody>
+                                </table>
                     </div>
                 </div>
             </div>
